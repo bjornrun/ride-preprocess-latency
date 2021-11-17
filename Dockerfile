@@ -1,4 +1,4 @@
-FROM python:3.8.8-slim-buster as builder
+FROM python:3.9.8-slim-buster as builder
 
 # install system dependencies
 RUN apt-get update \
@@ -26,7 +26,7 @@ COPY . /usr/src/app/
 
 
 
-FROM python:3.8.8-slim-buster
+FROM python:3.9.8-slim-buster
 
 # create directory for the app user
 RUN mkdir -p /home/app
